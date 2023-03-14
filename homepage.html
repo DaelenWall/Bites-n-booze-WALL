@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bites n' Booze</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="icon" type="image/x-icon" href="assets\favicon.ico">
+  <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+  <main>
+    <nav class="navbar is-active" role="navigation" aria-label="menu" aria-expended="false">
+      <div class="navbar-brand">
+
+        <img src="assets/b_n_b_logo.png" width="112" height="28">
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu myNavbar">
+       
+          
+          <a class="navbar-item" href="#hungry">
+            Hungry
+          </a>
+          <a class="navbar-item" href="#thirsty">
+            Thirsty
+          </a>
+          <a class="navbar-item" href="#quickD">
+            Quick Dishes
+          </a>
+            <a class="navbar-item" href="#quickDr">
+              Quick Drinks
+            </a>
+            <a class="navbar-item" href="#contact">
+              Contact Us
+            </a>
+
+      </div>
+    </nav>
+    <header>
+      <div class="hero main">
+        <h1>Bites n' Booze</h1>
+
+          <p class="welcome">Welcome to Bites n' Booze. In this app we will help you create the best and easiest recipes<span id="dots">...</span><span id="more"> 
+            for food and cocktails, based on the main ingredient that you like. Scroll down,
+          choose an option between hungry and thirsty, enter your preferred ingredient, and see the 
+          magic happen. Have fun cooking, and enjoy your meal.</span><button
+            class="hideText" onclick = "toggle()" id="myBtn">read more</button></p>
+
+      </div>
+
+      <div class="myContainer">
+        <div class="sidebar-left">
+          <h2 id="quickD"> Quick Dishes</h2>
+          
+              <a href="#dish1">
+                Sushi
+              </a>
+              <img id="sushi" src="assets/sushi.png" width="100" height="10">
+
+              <a href="#dish2">
+                Fettuccine Alfredo
+              </a>
+              <img id="fettuccine" src="assets/fettuccine.png" width="100" height="10">
+
+              <a href="#dish3">
+                Chivito Uruguayo
+              </a>
+              <img id="chivito" src="assets/chivito.png" width="100" height="10">
+
+          <a href="#dish4">
+                Croatian Stew
+              </a>
+              <img id="stew" src="assets/stew.png" width="100" height="10">
+        </div>
+
+        <div class="columns">
+          <div class="column is-half">
+
+            <h3>If hungry press here</h3>
+            <button id="hungry" class="submit">Hungry</button>
+          </div>
+          <div class="column is-half">
+            <h3>If thirsty press here</h3>
+            <button id="thirsty" class="submit">Thirsty</button>
+          </div>
+        </div>
+
+        <div class="sidebar-right">
+          <h2 id="quickDr">Quick Drinks</h2>
+      
+            <a href="#drink1">
+              Daiquiri
+            </a>
+            <img id="daiquiri" src="assets/daiquiri.png" width="100" height="10">
+  
+            <a href="#drink2">
+              Margarita
+            </a>
+            <img id="margarita" src="assets/margarita.png" width="100" height="10">
+     
+            <a href="#drink3">
+              Mojito
+            </a>
+            <img id="mojito" src="assets/mojito.png" width="100" height="10">
+          
+            <a href="#drink4">
+              Negroni
+            </a>
+            <img id="negroni" src="assets/negroni.png" width="100" height="10">
+        </div>
+
+  </main>
+  <footer id="contact">
+    <div class="icons">
+      <a href=""><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      <a href=""><i class="fa-solid fa-envelope fa-2x"></i></a>
+      <a href="https://github.com/odobashigenci/Bites-n--booze"><i class="fa-brands fa-github fa-2x"></i></a>
+    </div>
+      <p style="font-size: 1rem;" class="closing"><i class="fa fa-thin fa-copyright"></i> Just can't cook</p>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="JS\main.js"></script>
+</body>
+
+</html>

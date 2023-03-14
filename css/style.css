@@ -1,0 +1,316 @@
+* {
+    font-family: 'Merriweather', 'Gloock', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e5c99c;
+    font-family: "Merriweather";
+   
+}
+
+
+p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 100px auto  auto;
+    text-align: center;
+    width: 50%;
+}
+
+/* seting up the dropdown text expand to be smaller on mobile screen */
+@media (max-width: 700px){
+.welcome{
+    font-size: 1rem;
+    width: 80%
+}
+}
+
+h1 {
+    color: #213e50;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+@media (max-width: 700px){
+h1{
+    margin-top: 60px;
+}
+}
+
+
+h2 {
+    color: #213e50;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+h3 {
+    align-self: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar {
+    background: #e5c99c;
+}
+
+.navbar-item {
+    margin-left: 50px;
+}
+
+.navbar-burger {
+    height: 100px;
+    width: 100px;
+}
+
+/* turning the navbar menu into a burger on smaller screen */
+@media screen and (max-width: 1023px) {
+.navbar-menu {
+ 
+    background: #e5c99c;
+    box-shadow: none;
+    margin: auto;
+    padding: 0.5rem 0;
+    text-align: center;
+    width: 50%;
+}
+}
+
+/* setting up propperties for the main container */
+.myContainer {
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (max-width: 800px){
+    .myContainer {
+        justify-content: center;
+    }
+  }
+
+  /* setting up the background image propperties */
+.hero{
+    background-image: url(https://images.pexels.com/photos/5490826/pexels-photo-5490826.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    grid-area: main;
+    width: 100vw;
+}
+
+/* setting up the dropdown text to be hidden on screen reload and visible on click */
+#more {
+    display: none;
+}
+
+#myBtn {
+    background: transparent;
+    border-style: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* setting up the sidebars and the images inside */
+.sidebar-left {
+    background-color: #e6ecea;
+    box-shadow: 0px 0px 20px 3px #213e50;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    grid-area: sidebar;
+    height: 80vh;
+    text-align: center;
+    width: 250px;
+  }
+
+  .sidebar-left a {
+    color: #213e50;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  .sidebar-left img {
+    border: solid #213e50;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: -10px;
+    height: 130px;
+    transition: 0.2s ease-out;
+    padding: 5px;
+    width: 130px;
+  }
+
+  .sidebar-left img:hover {
+    box-shadow: 0px 0px 20px 3px #213e50;;
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 800px){
+    .sidebar-left, .sidebar-right {
+        display: none;
+    }
+  }
+
+  @media (max-width: 800px){
+   .sidebar-right {
+        display: none !important;
+    }
+  }
+
+  .sidebar-right {
+    background-color: #e6ecea;
+    box-shadow: 0px 0px 20px 3px #213e50;
+    display: grid;
+    height: 80vh;
+    justify-content: center;
+    justify-items: center;
+    justify-self: right;
+    text-align: center;
+    width: 250px;
+  }
+
+  .sidebar-right a {
+    color: #213e50;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  .sidebar-right img {
+    border: solid #213e50;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: -10px;
+    height: 130px;
+    transition: 0.2s ease-out;
+    padding: 5px;
+    width: 130px;
+  }
+
+  .sidebar-right img:hover {
+    box-shadow: 0px 0px 20px 3px #213e50;;
+   transform: scale(1.05);
+  }
+
+@media  (max-width: 800px) {
+    button {
+        margin-bottom: 30px;
+    }
+}
+
+/* setting up the main buttons propperties */
+#hungry, #thirsty {
+    background: #e6ecea;
+    border-radius: 15px;
+    color: #213e50;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    width: 200px;
+}
+
+#thirsty:hover, #hungry:hover {
+    background: transparent;
+    box-shadow: 0 0.4rem 1.4rem 0 #213e50;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.columns {
+    display: flex;
+    text-align: center;
+}
+
+@media (max-width: 800px){
+    .columns {
+    display: grid;
+    text-align: center;
+    }
+  }
+
+  @media (max-width: 800px){
+    h3 {
+    margin: 0;
+    }    
+  }
+
+.column {
+ 
+    width: 30%;
+}
+
+@media (max-width: 800px){
+    .column {
+        padding: 0;
+        width: 100%;
+    }
+  }
+
+  #contact {
+    align-items: center;
+    background: #e6ecea;
+    box-shadow: 0px 0px 20px 3px #213e50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    margin: auto auto 30px;
+    width: 60%;
+  }
+
+  @media (max-width: 700px) {
+    #contact {
+        height: 25vh;
+        width: 70vw;
+    }
+  }
+
+.icons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.icons a {
+    margin: 70px 20px -70px;
+    color: #213e50;
+}
+
+.closing {
+    color: #213e50;
+}
+
+.fa-linkedin:hover {
+  color: #0A66C2;
+
+}
+
+.fa-envelope:hover {
+  color: #3b5998;
+}
+
+.fa-github:hover {
+  color: #070707;
+}
+
